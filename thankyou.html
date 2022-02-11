@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="Project_FahimNaytik.css" type="text/css">
+    <style media="screen">
+      body{
+        margin-top: 2%;
+      }
+      .thnx{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/icons/logo.png" alt="logo" class="logo">
+    <section class="thnx">
+      <div class="top_animation">
+        <h2>Button Games</h2>
+        <p>Best gear. Best games</p>
+      </div><br><br>
+      <h2>Thank you for shopping with us <span id="display_name"></span> </h2>
+      <p>Check your email for a confirmation mail and how to redeem the code.</p>
+      <p>Enjoy your game!!!</p>
+    </section>
+
+      <script type="text/javascript" src="Project_FahimNaytik.js">
+        let d = document.querySelector('#display_name')
+        d.innerHTML = localStorage.getItem('username')
+      </script>
+  </body>
+</html>
